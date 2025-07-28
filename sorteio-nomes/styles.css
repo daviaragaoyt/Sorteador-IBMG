@@ -1,0 +1,82 @@
+:root {
+    --text-light: #ffffff;
+    --background-dark: #002f32;
+    --border-color-dark: #666;
+}
+
+/* Estilos para a main da página de nomes */
+main.sort-page.nome-page {
+    background-color: var(--background-dark); /* Fundo escuro */
+    color: var(--text-light); /* Texto branco */
+}
+
+main.sort-page.nome-page h1,
+main.sort-page.nome-page p {
+    color: var(--text-light);
+}
+
+main.sort-page.nome-page textarea {
+    width:50%;
+    background-color: #fff;
+    font-size:1.5rem;
+    color: var(--background-dark);
+    border-radius:10px;
+    border: 1px solid var(--border-color-dark);
+}
+main.sort-page.nome-page textarea::placeholder {
+    color: #333;
+}
+main.sort-page.nome-page textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 8px #fff;
+}
+
+main.sort-page.nome-page button {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: 18px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 700;
+    display: block;
+    width: auto;
+    margin: 20px auto 30px auto;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main.sort-page.nome-page button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+main.sort-page.nome-page p strong#nomeSorteado {
+    color: var(--accent-color);
+    font-size: 2.2em;
+    font-weight: 700;
+    display: block;
+    margin-top: 35px;
+    letter-spacing: 1px;
+}
+
+/* Responsividade específica para a página de nomes */
+@media (max-width: 768px) {
+    main.sort-page.nome-page {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+    main.sort-page.nome-page h1 {
+        font-size: 2.2em;
+    }
+    main.sort-page.nome-page textarea,
+    main.sort-page.nome-page button {
+        width: 100%;
+        padding: 15px;
+    }
+    main.sort-page.nome-page p strong#nomeSorteado {
+        font-size: 1.8em;
+    }
+}
